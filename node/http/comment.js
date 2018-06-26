@@ -19,5 +19,5 @@ var options = {
 var req = http.request(options,function (res) {
     console.log('stutas' + res.statusCode);
     console.log('headers' + JSON.stringify(res.headers));
-    
+
 })
