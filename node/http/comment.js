@@ -3,7 +3,7 @@ var querystring = require('querystring');
 
 var postData = querystring.stringify({
     'content':'期待',
-    'cid':'348'
+    'cid':'34802'
 });
 
 var options = {
