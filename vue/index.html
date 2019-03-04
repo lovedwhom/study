@@ -3,8 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>VUE</title>
+    <script src="./vue.js"></script>
 </head>
 <body>
 
+    <!--插值表达式-->
+    <div id="root">
+        <!--<div v-text="number"></div>-->
+        <!--<div v-html="number"></div>-->
+        <!--<div>{{message}} {{number}}</div>-->
+        <!--<div v-text="content"></div>-->
+        <!--//v-html 不转义-->
+        <!--<div v-html="content"></div>-->
+        <div @click="handleClick">{{content}}</div>
+    </div>
+    <script>
+        new Vue({
+            el:"#root",
+            //template:'',
+            data:{
+                message:"hello world",
+                number:123,
+                content:"hello"
+            },
+            methods:{
+                handleClick:function () {
+                    this.content='world'
+                }
+            }
+        });
+    </script>
 </body>
 </html>
